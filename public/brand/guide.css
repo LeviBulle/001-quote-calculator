@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap");
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #183d32;
+  background: #f8f9f4;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.page {
+  width: min(1080px, calc(100% - 48px));
+  margin: auto;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid #dce3d4;
+}
+.top span,
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.introduction {
+  padding: 70px 0 55px;
+}
+h1,
+h2,
+h3 {
+  font-family: Manrope, sans-serif;
+}
+h1 {
+  font-size: clamp(38px, 6vw, 70px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+  margin: 23px 0;
+}
+h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  max-width: 660px;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #576650;
+}
+.brand-hero {
+  background: #183d32;
+  padding: 30px 0;
+}
+.brand-hero img {
+  display: block;
+  width: min(100%, 850px);
+  margin: auto;
+}
+.section {
+  padding: 55px 0;
+  border-bottom: 1px solid #dce3d4;
+}
+.concept,
+.type-grid,
+.applications,
+.rules {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.symbol-display {
+  background: #eaf0df;
+  min-height: 290px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+}
+.note {
+  font-size: 12px;
+}
+.logo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.logo-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid #dce3d4;
+  border-radius: 12px;
+  padding: 45px 25px 20px;
+  color: inherit;
+  text-decoration: none;
+  min-height: 215px;
+}
+.logo-tile img {
+  width: 85%;
+  height: 100px;
+  object-fit: contain;
+}
+.logo-tile span {
+  font-size: 11px;
+}
+.dark {
+  background: #183d32;
+  color: #d4ed9a;
+  border-color: #183d32;
+}
+.white {
+  background: #fff;
+}
+.lime {
+  background: #d4ed9a;
+}
+.logo-tile .favicon-demo {
+  width: 84px;
+  height: 84px;
+}
+.palette {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.palette > div {
+  background: var(--swatch);
+  color: var(--ink);
+  min-height: 220px;
+  border-radius: 10px;
+  padding: 22px 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border: 1px solid #183d3212;
+}
+.palette strong {
+  font-size: 14px;
+}
+.palette span {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.palette small {
+  font-size: 10px;
+  margin-top: 7px;
+}
+.type-grid {
+  align-items: start;
+}
+.type-example {
+  font-size: clamp(44px, 6vw, 65px);
+  margin-top: 20px;
+}
+.voice {
+  background: #eaf0df;
+  padding: 25px;
+  border-radius: 12px;
+}
+.voice blockquote {
+  font:
+    600 25px/1.5 Manrope,
+    sans-serif;
+  margin: 25px 0;
+}
+.sticker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  height: 290px;
+  background: #d4ed9a;
+  border: 8px solid #f8f9f4;
+  outline: 1px solid #c9d4ba;
+  border-radius: 50%;
+  margin: auto;
+  transform: rotate(-8deg);
+}
+.sticker img {
+  width: 110px;
+  height: 110px;
+}
+.sticker strong {
+  text-align: center;
+  font:
+    800 23px/1.1 Manrope,
+    sans-serif;
+}
+.sticker span {
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-top: 17px;
+}
+.pattern img {
+  width: 100%;
+  border-radius: 10px;
+}
+.pattern span {
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.rules {
+  align-items: start;
+}
+.download {
+  display: inline-block;
+  padding: 16px 23px;
+  background: #183d32;
+  color: #d4ed9a;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 25px;
+}
+a:focus-visible {
+  outline: 3px solid #6d8659;
+  outline-offset: 5px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 0;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+@media (max-width: 650px) {
+  .top img {
+    width: 170px;
+  }
+  .top span {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .introduction {
+    padding-top: 45px;
+  }
+  .concept,
+  .type-grid,
+  .applications,
+  .rules {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .palette {
+    grid-template-columns: 1fr 1fr;
+  }
+  .palette > div {
+    min-height: 170px;
+  }
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    padding-block: 35px;
+  }
+  h1 {
+    letter-spacing: -1.8px;
+  }
+}
+@media print {
+  .section,
+  .brand-hero,
+  .logo-tile,
+  .palette {
+    break-inside: avoid;
+  }
+  .download {
+    display: none;
+  }
+  body {
+    print-color-adjust: exact;
+  }
+}

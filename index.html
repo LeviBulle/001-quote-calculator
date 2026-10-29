@@ -1,59 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Estimate your bicycle service at Borough Cycle Repairs. Choose your maintenance service and optional extras, with clear prices in pounds.">
-  <title>Service estimate | Borough Cycle Repairs</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header class="site-header wrap">
-    <a class="brand" href="./" aria-label="Borough Cycle Repairs home"><span class="brand-icon" aria-hidden="true">↗</span><span>BOROUGH<span class="brand-sub">CYCLE REPAIRS</span></span></a>
-    <span class="location">Your local workshop. London.</span>
-  </header>
-  <main class="wrap">
-    <section class="intro" aria-labelledby="page-title">
-      <p class="eyebrow"><span></span> LESS GUESSWORK. MORE RIDING.</p>
-      <h1 id="page-title">A little care.<br><span>A better ride.</span></h1>
-      <p class="intro-copy">Good service starts with a clear price. Build your estimate below and get your bike ready for its next adventure.</p>
-      <div class="intro-note"><span aria-hidden="true">↘</span> Your next ride starts here.</div>
-    </section>
-    <div class="calculator-layout">
-      <form id="quote-form">
-        <fieldset>
-          <legend><span class="step">01</span> Choose your service</legend>
-          <p class="field-description" id="service-help">Select one main service to get started.</p>
-          <div class="service-list">
-            <label class="service-option"><input type="radio" name="service" value="basic" required aria-describedby="service-help"><span class="option-copy"><strong>Basic maintenance</strong><small>A little attention for your everyday ride.</small></span><span class="price">£25</span></label>
-            <label class="service-option"><input type="radio" name="service" value="full" required><span class="option-copy"><strong>Full maintenance</strong><small>Give your bike some extra care.</small></span><span class="price">£55</span></label>
-            <label class="service-option"><input type="radio" name="service" value="ebike" required><span class="option-copy"><strong>E-bike maintenance</strong><small>Care for your electrically assisted ride.</small></span><span class="price">£75</span></label>
-          </div>
-        </fieldset>
-        <fieldset class="extras">
-          <legend><span class="step">02</span> Make it your own <span class="optional">OPTIONAL</span></legend>
-          <p class="field-description">A couple of extras, if your bike needs them.</p>
-          <label class="extra-option"><input type="checkbox" name="extra" value="tyre"><span>Tyre replacement</span><strong>+ £12</strong></label>
-          <label class="extra-option"><input type="checkbox" name="extra" value="brakes"><span>Brake adjustment</span><strong>+ £18</strong></label>
-        </fieldset>
-        <button class="calculate" type="submit">Calculate estimate <span aria-hidden="true">↗</span></button>
-      </form>
-      <aside class="summary" aria-labelledby="summary-title">
-        <div class="summary-top"><span class="eyebrow">THE ROAD AHEAD</span><span aria-hidden="true">↗</span></div>
-        <h2 id="summary-title">Your estimate</h2>
-        <p class="summary-description">A clear picture of your next service.</p>
-        <div id="quote-result" aria-live="polite" aria-atomic="true">
-          <div id="summary-items" class="summary-items"><p class="empty-state">Choose a main service to see your estimate here.</p></div>
-          <div class="total-row"><span>Estimated total</span><strong id="total">—</strong></div>
-          <p class="currency-note">All prices in GBP (£)</p>
-        </div>
-        <div class="estimate-note"><span aria-hidden="true">ⓘ</span><p>This is an estimate. We'll confirm the final price with you after checking your bike.</p></div>
-        <div class="summary-bottom"><span aria-hidden="true">✳</span> A happier bike. A happier journey.</div>
-      </aside>
-    </div>
-    <section class="reassurance" aria-label="Our approach"><p><span aria-hidden="true">✓</span> Clear, upfront estimates</p><p><span aria-hidden="true">✓</span> Care for every kind of rider</p><p><span aria-hidden="true">✓</span> Your local London workshop</p></section>
-  </main>
-  <footer class="wrap"><span>© <span id="year">2026</span> Borough Cycle Repairs</span><span>Keep your wheels turning.</span></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#183d32" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%brand/favicon.svg" />
+    <meta
+      name="description"
+      content="Build your bicycle service estimate with Borough Cycle Repairs, London. Clear prices, optional extras and an instant total in GBP."
+    />
+    <title>Service estimate | Borough Cycle Repairs</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript
+      >Please enable JavaScript to use the service estimate
+      calculator.</noscript
+    >
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
