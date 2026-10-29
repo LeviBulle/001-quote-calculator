@@ -8,7 +8,7 @@ Abra `index.html` no navegador. Não é necessário instalar dependências ou ex
 
 ## Funcionalidades
 
-- Seleção de um serviço principal: Basic maintenance (£25), Full maintenance (£55) ou E-bike maintenance (£77).
+- Seleção de um serviço principal: Basic maintenance (£25), Full maintenance (£55) ou E-bike maintenance (£75).
 - Extras opcionais: Tyre replacement (+£12) e Brake adjustment (+£18).
 - Resumo e total atualizados automaticamente, com formatação GBP.
 - Validação nativa que impede enviar o formulário sem serviço principal.
@@ -18,8 +18,8 @@ Abra `index.html` no navegador. Não é necessário instalar dependências ou ex
 
 1. Sem selecionar serviço, clique em **Calculate estimate**: o navegador deve solicitar um serviço principal.
 2. Marque apenas extras: o total deve continuar como `—`.
-3. Selecione cada serviço sem extras: £25.00, £55.00 e £77.00.
-4. Adicione os dois extras: os totais devem ser £55.00, £85.00 e £107.00, respectivamente.
+3. Selecione cada serviço sem extras: £25.00, £55.00 e £75.00.
+4. Adicione os dois extras: os totais devem ser £55.00, £85.00 e £105.00, respectivamente.
 5. Desmarque extras e troque o serviço: o resumo deve refletir exatamente a seleção atual.
 6. Verifique a navegação por teclado e o layout em uma janela de celular e de computador.
 

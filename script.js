@@ -3,7 +3,7 @@
 const services = {
   basic: { label: 'Basic maintenance', price: 25 },
   full: { label: 'Full maintenance', price: 55 },
-  ebike: { label: 'E-bike maintenance', price: 77 },
+  ebike: { label: 'E-bike maintenance', price: 75 },
 };
 const extras = {
   tyre: { label: 'Tyre replacement', price: 12 },
